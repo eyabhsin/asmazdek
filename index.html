@@ -38,10 +38,11 @@
     justify-content: center;
     text-align: center;
     padding: 8vh 6vw;
-    background-image: url('asma.png');
+    background-image: url('asma.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: var(--ink);
   }
 
@@ -60,13 +61,11 @@
   }
 
   .frame{
-    border: 1px solid rgba(200,164,92,0.55);
     padding: 3rem 2rem;
     max-width: 560px;
     width: 100%;
-    background: rgba(250,246,236,0.35);
-    /* backdrop-filter retire : c'etait la principale cause des lags (flou recalcule sur
-       chaque frame derriere une grande image de fond, sur 4 sections) */
+    background: transparent;
+    border: none;
   }
 
   .ornament{
